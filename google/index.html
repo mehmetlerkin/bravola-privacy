@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Bravola</title>
+<style>body{margin:0;background:#0b1a24;color:#e8f0f4;font:17px system-ui,sans-serif;text-align:center;padding:30vh 24px}</style>
+</head>
+<body>
+<p>Bravola'ya dönülüyor… / Returning to Bravola…</p>
+<script>
+// Bravola iPhone uygulamasının Google ile girişi: Google kimlik jetonunu bu sayfanın adresine (# sonrası) koyar; sayfa onu
+// uygulamaya geri verir (bravola://google). Jeton hiçbir yere gönderilmez, yalnız uygulamaya döner.
+location.replace('bravola://google?' + location.hash.slice(1));
+</script>
+</body>
+</html>
