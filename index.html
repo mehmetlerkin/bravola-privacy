@@ -37,10 +37,10 @@
 
   <section id="tr" lang="tr">
     <h2>Gizlilik Politikası</h2>
-    <p class="date">Yürürlük tarihi: 17 Ekim 2026 (reklamlar, bulut yedeği, skor tabloları ve Google hesabı bağlama eklendi)</p>
-    <p>Bu politika, Veyrox Games tarafından geliştirilen <b>Bravola: Kartlı Futbol</b> oyununu (Android paketi
+    <p class="date">Yürürlük tarihi: 17 Ekim 2026 (kulüp adları, bildirme ve engelleme, iPhone sürümü eklendi)</p>
+    <p>Bu politika, Veyrox Games tarafından geliştirilen <b>Bravola: Kartlı Futbol</b> oyununu (Android ve iPhone,
       <code>com.bravola.game</code>) kapsar. Kısaca: senden ad, e-posta ya da konum gibi kişisel veri istemeyiz; oyun
-      ilerlemen anonim bir oyun hesabıyla buluta yedeklenir; oyun içi satın almalar Google Play üzerinden yapılır; oyunda
+      ilerlemen anonim bir oyun hesabıyla buluta yedeklenir; oyun içi satın almalar Google Play ya da App Store üzerinden yapılır; oyunda
       Google AdMob reklamları vardır (aşağıda).</p>
 
     <h3>Topladığımız veriler</h3>
@@ -72,7 +72,13 @@
         işaretlidir.</li>
       <li>Buluta yalnızca oyun verileri gider: ilerlemen (kartlar, jeton, BRAVO, bölümler, kulüp adı ve renkleri, kariyer)
         yedek olarak; destendeki kartlar, kulüp adın, forma renklerin ve kampüsündeki binaların seviyeleri dereceli rakiplerin ve kulüp ziyaretlerinin görmesi için; dereceli puanın ve
-        miras puanın skor tablolarında. Kulüp adı oyundaki hazır kelimelerden seçilir, serbest yazı yoktur.</li>
+        miras puanın skor tablolarında.</li>
+      <li>Kulüp adı: 13 yaşından büyük oyuncular kulüp adını kendileri yazabilir (çocuklar oyunun hazır kelimelerinden
+        seçer). Ad herkese özgün olsun diye sunucuda (Unity Cloud Code ve Cloud Save) oyuncu kimliğinle eşleştirilerek
+        saklanır; sıralamada, kulüp ziyaretinde ve dereceli maçta diğer oyunculara görünür. Uygunsuz kelimeler oyunda
+        süzülür. Oyuncular bir kulüp adını <b>BİLDİR</b> ile bize bildirebilir ya da <b>ENGELLE</b> ile kendilerinden
+        gizleyebilir (engellenen kulübün adı ve arması görünmez, dereceli rakip olarak gelmez). Bildirilen adları inceler,
+        uygun olmayanları kaldırırız; o kulübe yeni bir ad verilir. Hesabını silince adın da serbest kalır.</li>
       <li>Kurtarma kodu (ayarlar → hesap ve kayıt) bu anonim hesabın anahtarıdır; ilerlemeni başka cihaza almak için
         kullanılır. Kimseyle paylaşma.</li>
       <li>İstersen oyun hesabını Google hesabına bağlayabilirsin (ayarlar → hesap ve kayıt → GOOGLE HESABI). Bağlarken
@@ -91,8 +97,10 @@
 
     <h3>Oyun içi satın almalar</h3>
     <ul>
-      <li>Satın almalar (BRAVO, premium sezon bileti, reklamsız paket) Google Play Faturalandırma ile yapılır. Ödeme
-        bilgilerini yalnızca Google işler; biz kart ya da hesap bilgilerini görmeyiz.</li>
+      <li>Satın almalar (BRAVO, premium sezon bileti, reklamsız paket) Android'de Google Play Faturalandırma, iPhone'da
+        App Store (Apple) ile yapılır. Ödeme bilgilerini yalnızca Google ya da Apple işler; biz kart ya da hesap bilgilerini
+        görmeyiz. App Store satın almalarında Apple'ın kuralları ve <a href="https://www.apple.com/legal/privacy/">Apple
+        Gizlilik Politikası</a> geçerlidir.</li>
       <li>Google Play, satın alma kaydını (hangi ürün, ne zaman, sipariş numarası) tutar. Oyun bu kaydı yalnızca ödülünü
         vermek, satın almanın gerçek olduğunu doğrulamak ve yarım kalan satın almayı tamamlamak için kullanır.</li>
       <li>Google Play Faturalandırma kütüphanesi bunun için Google'ın hizmetleriyle internet üzerinden iletişim kurar.
@@ -122,13 +130,16 @@
       <li>Google Play faturalandırma: satın alma için.</li>
       <li>İnternet ve ağ durumu: satın alma, bulut yedeği, skor tabloları, dereceli rakipler ve reklamlar için.</li>
       <li>Reklam kimliği (AD_ID): yalnız yetişkinlere reklam göstermek için, Google AdMob kullanır.</li>
+      <li>iPhone'da uygulamalar arası takip izni (App Tracking Transparency) yalnız yetişkinlere, reklam için sorulur;
+        izin vermesen de oyun aynı çalışır.</li>
     </ul>
 
     <h3>Çocuklar</h3>
     <p>Bravola her yaştan oyuncuya, çocuklara da uygundur. 13 yaşından küçükler dahil hiç kimseden bilerek kişisel
-      bilgi toplamayız; oyunda sohbet ya da oyuncular arası mesajlaşma yoktur. 13 yaşından küçüklere yalnız çocuklara uygun, kişiselleştirilmemiş reklam gösterilir. Diğer oyuncular yalnızca kulüp
-      adını, renklerini, puanını, destesini ve kampüsünün seviyelerini görür. Oyun içi satın almalarda Google
-      Play'in ebeveyn denetimleri (aile yöneticisinin onayı, satın almada kimlik doğrulama) geçerlidir. İçeriği önceden
+      bilgi toplamayız; oyunda sohbet ya da oyuncular arası mesajlaşma yoktur. 13 yaşından küçüklere yalnız çocuklara uygun, kişiselleştirilmemiş reklam gösterilir. Çocuklar kulüp adını serbest yazamaz,
+      yalnız oyunun hazır kelimelerinden seçer. Diğer oyuncular yalnızca kulüp adını, armasını, renklerini, puanını,
+      destesini ve kampüsünün seviyelerini görür. Oyun içi satın almalarda Google Play'in ve Apple'ın ebeveyn denetimleri
+      (aile yöneticisinin onayı, Satın Alma İsteği, satın almada kimlik doğrulama) geçerlidir. İçeriği önceden
       bilinmeyen kart paketlerinin olasılıkları oyunda, her paketin altında yazar.</p>
 
     <h3>Değişiklikler</h3>
@@ -141,10 +152,10 @@
 
   <section id="en" lang="en">
     <h2>Privacy Policy</h2>
-    <p class="date">Effective date: October 17, 2026 (ads, cloud backup, leaderboards and Google account linking added)</p>
-    <p>This policy covers <b>Bravola: Card Football</b> (Android package <code>com.bravola.game</code>), developed by
+    <p class="date">Effective date: October 17, 2026 (club names, reporting and blocking, iPhone version added)</p>
+    <p>This policy covers <b>Bravola: Card Football</b> (Android and iPhone, <code>com.bravola.game</code>), developed by
       Veyrox Games. In short: we never ask for personal data such as your name, email or location; your game progress is
-      backed up to the cloud with an anonymous game account; in-app purchases go through Google Play; the game shows
+      backed up to the cloud with an anonymous game account; in-app purchases go through Google Play or the App Store; the game shows
       Google AdMob ads (see below).</p>
 
     <h3>Data we collect</h3>
@@ -176,7 +187,13 @@
         directed to children.</li>
       <li>Only game data goes to the cloud: your progress (cards, coins, BRAVO, chapters, club name and colors, career) as a
         backup; your deck, club name, kit colors and your campus building levels so ranked opponents can play against it and other players can visit your club; your ranked points and legacy
-        points on leaderboards. Club names are picked from the game's own word lists; there is no free text.</li>
+        points on leaderboards.</li>
+      <li>Club name: players over 13 can type their own club name (children pick from the game's word lists). To keep
+        names unique, the name is stored on the server (Unity Cloud Code and Cloud Save) together with your player ID; other
+        players see it on the leaderboards, on club visits and in ranked matches. Offensive words are filtered in the game.
+        Players can <b>REPORT</b> a club name to us or <b>BLOCK</b> the club to hide it from themselves (a blocked club's
+        name and crest are hidden and it is never matched as a ranked opponent). We review reported names and remove
+        inappropriate ones; that club gets a new name. Deleting your account frees your name.</li>
       <li>The recovery code (settings → account & save) is the key to this anonymous account and moves your progress to
         another device. Never share it.</li>
       <li>You can optionally link your game account to your Google account (settings → account & save → GOOGLE ACCOUNT).
@@ -196,8 +213,10 @@
 
     <h3>In-app purchases</h3>
     <ul>
-      <li>Purchases (BRAVO, the premium season pass, the ad-free bundle) are made with Google Play Billing. Only Google
-        processes payment details; we never see your card or account information.</li>
+      <li>Purchases (BRAVO, the premium season pass, the ad-free bundle) are made with Google Play Billing on Android and
+        with the App Store (Apple) on iPhone. Only Google or Apple processes payment details; we never see your card or
+        account information. App Store purchases follow Apple's terms and the <a href="https://www.apple.com/legal/privacy/">Apple
+        Privacy Policy</a>.</li>
       <li>Google Play keeps a record of each purchase (which item, when, the order number). The game uses that record only
         to give you your reward, to verify the purchase is genuine and to finish an interrupted purchase.</li>
       <li>For this, the Google Play Billing library talks to Google's services over the internet. How Google handles this
@@ -226,13 +245,16 @@
       <li>Google Play billing: for purchases.</li>
       <li>Internet and network state: for purchases, cloud backup, leaderboards, ranked opponents and ads.</li>
       <li>Advertising ID (AD_ID): used by Google AdMob, only to show ads to adults.</li>
+      <li>On iPhone, App Tracking Transparency permission is asked only of adults, for ads; the game works the same if
+        you decline.</li>
     </ul>
 
     <h3>Children</h3>
     <p>Bravola is suitable for players of all ages, including children. We do not knowingly collect personal
       information from anyone, including children under 13; the game has no chat and no player-to-player communication.
-      Players under 13 only see child-appropriate, non-personalized ads. Other players only see your club name, colors, points, deck and campus levels. Google Play's parental controls (family manager approval, authentication for purchases) apply to in-app
-      purchases. The odds for card packs with unknown contents are shown in the game, under each pack.</p>
+      Players under 13 only see child-appropriate, non-personalized ads. Children cannot type a free club name; they pick from the game's word lists. Other players only see your club name,
+      crest, colors, points, deck and campus levels. Google Play's and Apple's parental controls (family manager approval,
+      Ask to Buy, authentication for purchases) apply to in-app purchases. The odds for card packs with unknown contents are shown in the game, under each pack.</p>
 
     <h3>Changes</h3>
     <p>If the game ever adds new online features or another service that uses data, we will update this page beforehand
